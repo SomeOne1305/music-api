@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/musical-note.png"
+      type="image/x-icon"
+    />
+    <title>MUSIC API</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .all {
+        width: 100%;
+      }
+      main {
+        width: 100%;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      body {
+        background: #f0f0f0;
+      }
+      @media (max-width: 1200px) {
+        .container {
+          width: 100%;
+          margin: 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .icon-get {
+          padding: 6px 9px;
+          font-size: 17px;
+          margin-right: 8px;
+        }
+        .container{
+            padding: 1rem;
+        }
+      }
+      .intro {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #b5d4e5;
+      }
+      .intro p {
+        margin: 1rem 0;
+      }
+      .usage {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        background-color: #ffffff;
+      }
+      .usage-item {
+        padding: 1rem 0;
+      }
+      .link {
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        background-color: #b5d4e5;
+        display: flex;
+        align-items: center;
+      }
+      .usage a {
+        width: 100%;
+        color: #043ea1;
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 16px;
+        display: block;
+      }
+      .usage a:hover {
+        text-decoration: underline;
+      }
+      .usage-item .icon-get {
+        padding: 7px 12px;
+        font-size: 19px;
+        color: #ffffff;
+        background-color: #06d52f;
+        border-radius: 8px;
+        margin-right: 2rem;
+        text-transform: uppercase;
+      }
+      .method {
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        background-color: #f7f7f9;
+        margin-top: 12px;
+        border: 1px solid rgb(198, 191, 191);
+        margin-left: 1rem;
+      }
+      .bold {
+        font-family: monospace;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .url {
+        font-family: monospace;
+        font-size: 16px;
+      }
+      .title {
+        font-size: 22px;
+        margin-bottom: 1.2rem;
+        text-transform: uppercase;
+      }
+      hr {
+        margin: 10px 0;
+      }
+      footer {
+        background-color: #0a081c;
+      }
+      ._d {
+        color: #ffffff;
+        margin: 0 auto;
+      }
+      .text {
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+    <div class="all">
+      <main>
+        <div class="container">
+          <div class="intro">
+            <h1>Welcome to ♫ MUSIC API</h1>
+            <p>
+              It is free to use this API. I have used it. I find this very
+              helpful for everyone especially for junior developers, so I share
+              this for you ! ☺
+            </p>
+          </div>
+          <div class="usage">
+            <div class="usage-item">
+              <h2 class="title">Get users list who are registered:</h2>
+              <div class="link">
+                <span class="icon-get">Get</span>
+                <a href="/api/v1/users" target="_blank"
+                  >https://free-music-source.vercel.app/api/v1/users</a
+                >
+              </div>
+              <div class="method">
+                <span class="bold">GET</span>
+                <span class="url">/api/v1/users</span>
+              </div>
+              <div class="method">
+                <span class="bold">GET</span>
+                <span class="url">/api/v1/users/{:index}</span>
+              </div>
+            </div>
+            <hr />
+            <div class="usage-item">
+              <h2 class="title">Get musics for using:</h2>
+              <div class="link">
+                <span class="icon-get">Get</span>
+                <a href="api/v1/musics" target="_blank"
+                  >https://free-music-source.vercel.app/api/v1/musics</a
+                >
+              </div>
+              <div class="method">
+                <span class="bold">GET</span>
+                <span class="url">/api/v1/musics</span>
+              </div>
+              <div class="method">
+                <span class="bold">GET</span>
+                <span class="url">/api/v1/musics/{:index}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="text">
+            <span class="_d">2023 © All rights are reserved</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
